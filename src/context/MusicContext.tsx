@@ -10,7 +10,7 @@ interface Song {
   song: string;
 }
 
-// Typo de datos para las funciones y variables
+// Tipo de datos para las funciones y variables
 type MusicContextType = {
   boton: boolean;
   HandleClickPlay: () => void;
@@ -26,7 +26,7 @@ const MusicContext = createContext<MusicContextType>({
   HandleClickSongSelected: () => {},
 });
 
-// Typo de dato que es el children
+// Tipo de dato que es el children
 type MusicProviderProps = {
   children: ReactNode;
 };

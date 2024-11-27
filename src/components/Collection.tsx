@@ -1,9 +1,8 @@
 import { FaCompactDisc } from "react-icons/fa";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Collection = () => {
   return (
-    <div className="h-auto -mt-2">
+    <div className="h-auto -mt-2 py-2">
       <h1 className="text-lg font-bold -mt-4 mb-4">Coleccion</h1>
 
       <div className="flex gap-8">
@@ -44,10 +43,6 @@ const Collection = () => {
               <p className="text-sm font-light">12 Song</p>
             </div>
           </div>
-        </div>
-
-        <div className="h-52 w-8 flex items-center cursor-pointer">
-          <MdKeyboardDoubleArrowRight size={30} className="hover:translate-x-1 duration-300" />
         </div>
       </div>
     </div>

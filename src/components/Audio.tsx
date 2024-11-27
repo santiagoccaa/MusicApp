@@ -51,7 +51,6 @@ export const Audio = () => {
     <>
       <audio
         ref={audioRef}
-        autoPlay
         className="absolute top-24 left-0"
         src={songSelected.song}
       ></audio>
