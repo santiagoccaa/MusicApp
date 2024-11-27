@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { options } from "@/data/options";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Options = () => {
+  const pathName = usePathname()
   const [idselec, setIdselec] = useState(3);
 
   const HandleClickId = (id: number) => {
@@ -18,7 +20,7 @@ const Options = () => {
           <button onClick={() => HandleClickId(id)}>
             <Link
               href={link}
-              className={`h-12 w-12 rounded-full flex items-center justify-center shadow-xl ${id === idselec ? 'bg-[#FF0000] text-white scale-105' : 'bg-white'}  hover:bg-[#FF0000] hover:text-white duration-300`}
+              className={` ${link === pathName ? 'bg-[#FF0000] text-white' : 'bg-white'} h-12 w-12 rounded-full flex items-center justify-center shadow-xl hover:bg-[#FF0000] hover:text-white duration-300`}
             >
               {icono}
             </Link>

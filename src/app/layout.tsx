@@ -22,9 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body suppressHydrationWarning={true}
-        className={`bg-gradient-to-r to-[#f5f5f5] via-[#f8f8f8] from-[#F9F9F9] ${fuente.className}`}
-      >
+      <body suppressHydrationWarning={true} className={fuente.className}>
         <MusicProvider>
           <main className="mx-4 h-screen">
             <NavBar />

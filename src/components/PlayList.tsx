@@ -16,11 +16,11 @@ const PlayList = () => {
       }}
       className="mx-20 flex flex-col"
     >
-      <h1 className="font-bold ml-4 text-lg mb-4">
-        Play<span>List</span> 
+      <h1 className="font-bold ml-4 text-lg mb-4 text-gray-900">
+        PlayList
       </h1>
 
-      <div className="grid grid-cols-1 gap-y-6 h-[28rem] w-96 overflow-y-scroll scroll">   
+      <div className="flex flex-col items-center gap-y-6 h-[28rem] w-[28rem] p-4 overflow-y-scroll scroll">   
       {
         music.map(m => (
         <ItemMusic key={m.id} data={{nombre: m.nombre, artista: m.artista, imagen: m.imagen, song:m.song}}/>
